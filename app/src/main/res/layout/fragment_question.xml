@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="questionViewModel"
+            type="de.htw_berlin.quiz.fragments.question.QuestionViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/text_view_frage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Frage"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/progress_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ProgressBar
+                        android:id="@+id/progess_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="5"
+                        android:progress="0"
+                        android:progressTint="@color/green"
+                        android:indeterminate="false"/>
+                    <TextView
+                        android:id="@+id/tvprog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        android:text="0/5"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/option_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/default_options"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:onClick="@{(view) -> questionViewModel.onAnswer(view)}"
+                    android:tag="1"
+                    tools:text="Antwort1" />
+
+                <TextView
+                    android:id="@+id/option_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_options"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:onClick="@{(view) -> questionViewModel.onAnswer(view)}"
+                    android:tag="2"
+                    tools:text="Antwort2"/>
+
+
+                <TextView
+                    android:id="@+id/option_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_options"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:onClick="@{(view) -> questionViewModel.onAnswer(view)}"
+                    android:tag="3"
+                    tools:text="Antwort3"/>
+
+                <TextView
+                    android:id="@+id/option_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_options"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:onClick="@{(view) -> questionViewModel.onAnswer(view)}"
+                    android:tag= "4"
+                    tools:text="Antwort4"/>
+
+                <Button
+
+                    android:id="@+id/button_antworten"
+                    android:onClick="@{() -> questionViewModel.onAnswerButton()}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_button_purple"
+                    android:text="ANTWORTEN"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
