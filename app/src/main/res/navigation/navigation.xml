@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="de.htw_berlin.quiz.fragments.title.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_questionFragment"
+            app:destination="@id/questionFragment">
+            <argument
+                android:name="s_name"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_titleFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+        <action
+            android:id="@+id/action_titleFragment_self"
+            app:destination="@id/titleFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="de.htw_berlin.quiz.fragments.question.QuestionFragment"
+        android:label="QuestionFragment" >
+
+        <action
+            android:id="@+id/action_questionFragment_to_resultFragment"
+            app:destination="@id/resultFragment">
+        </action>
+        <argument
+            android:name="s_name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_questionFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="de.htw_berlin.quiz.fragments.result.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_titleFragment"
+            app:destination="@id/titleFragment">
+        </action>
+        <argument
+            android:name="s_name"
+            app:argType="string" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="de.htw_berlin.quiz.fragments.score.ScoreFragment"
+        android:label="ScoreFragment" >
+        <action
+            android:id="@+id/action_scoreFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_scoreFragment_self"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+</navigation>
