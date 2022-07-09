@@ -1,6 +1,7 @@
 package de.htw_berlin.quiz.fragments.result
 
 import android.app.Application
+import android.widget.Toast
 import androidx.lifecycle.*
 import de.htw_berlin.quiz.data.User
 import de.htw_berlin.quiz.data.userDao
@@ -57,7 +58,10 @@ class ResultViewModel(rname: String, rscore: Int, val database: userDao,applicat
         {
             insert(new_user)
         }
-
+        else
+        {
+            Toast.makeText(getApplication(),"Ergebnis nicht gespeichet !", Toast.LENGTH_SHORT).show()
+        }
 
 
         /**
