@@ -112,7 +112,7 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:text="@{`Score:     ` + String.valueOf(resultViewModel.score)}"
+                    android:text="@{`Score:      ` + String.valueOf(resultViewModel.score)}"
                     tools:text="Score:"></TextView>
 
                 <Button
