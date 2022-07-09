@@ -90,6 +90,7 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:maxLines="1"
                     android:text="@{String.valueOf(resultViewModel.sname)}"
                     tools:text="user"></TextView>
 

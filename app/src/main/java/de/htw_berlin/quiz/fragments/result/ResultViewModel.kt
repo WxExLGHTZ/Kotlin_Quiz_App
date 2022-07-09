@@ -91,6 +91,5 @@ class ResultViewModel(rname: String, rscore: Int, val database: userDao,applicat
          * insert current user in Database
          */
         database.insert(user)
-
     }
 }

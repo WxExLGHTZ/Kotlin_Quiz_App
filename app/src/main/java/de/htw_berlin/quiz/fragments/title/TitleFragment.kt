@@ -58,7 +58,6 @@ class TitleFragment : Fragment() {
                  */
                 val action = TitleFragmentDirections.actionTitleFragmentSelf()
                 NavHostFragment.findNavController(requireParentFragment()).navigate(action)
-
             }
         })
 
