@@ -80,6 +80,7 @@ class ResultFragment : Fragment() {
 
                 Toast.makeText(activity,"Ergebnis nicht gespeichert !", Toast.LENGTH_SHORT).show()
 
+
                 /**
                 * navigate to title fragmet
                  **/

@@ -39,7 +39,7 @@
             android:layout_width="226dp"
             android:layout_height="162dp"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
             android:contentDescription="image"
             android:src="@drawable/trophy"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/image_view_trophy"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="20dp"
             app:cardBackgroundColor="@color/white"
@@ -69,16 +69,6 @@
 
 
 
-                <TextView
-                    android:id="@+id/text_view_cong"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:gravity="center"
-                    android:text="HERZLICHEN GLÜCKWUNSCH !!!"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"></TextView>
 
 
                 <TextView

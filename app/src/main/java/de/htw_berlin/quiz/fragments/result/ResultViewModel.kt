@@ -60,7 +60,7 @@ class ResultViewModel(rname: String, rscore: Int, val database: userDao,applicat
         }
         else
         {
-            Toast.makeText(getApplication(),"Keine Punkte erreicht !", Toast.LENGTH_SHORT).show()
+            Toast.makeText(getApplication(),"Keine Punkte erreicht !\nErgebnis nicht gespeichert !", Toast.LENGTH_SHORT).show()
         }
 
 
