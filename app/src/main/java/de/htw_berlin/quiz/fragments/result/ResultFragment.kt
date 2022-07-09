@@ -55,6 +55,8 @@ class ResultFragment : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
 
 
+
+
         /**
          * waiting for event from Viewmodel
          */
@@ -87,6 +89,13 @@ class ResultFragment : Fragment() {
 
             }
         })
+
+        /**
+         * serttings needed for marquee
+         */
+
+        binding.textViewName.setSingleLine()
+        binding.textViewName.isSelected = true
 
         return binding.root
     }

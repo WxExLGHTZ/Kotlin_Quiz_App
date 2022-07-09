@@ -91,6 +91,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:maxLines="1"
+                    android:ellipsize="marquee"
                     android:text="@{String.valueOf(resultViewModel.sname)}"
                     tools:text="user"></TextView>
 
