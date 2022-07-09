@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/titel_tv_name"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:cardBackgroundColor="@color/white"
@@ -62,25 +62,25 @@
                     android:text="Bitte Namen eingeben "
                     android:textColor="@color/black"
                     android:textSize="25dp"
+                    android:layout_marginTop="50dp"
                     android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="9">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    app:counterEnabled="true">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/e_text_name"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="60dp"
                         android:hint="Name"
                         android:maxLines="1"
-                        android:maxLength="9"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:textColor="@color/black"
+                        android:singleLine="true"
                         android:textColorHint="@color/grey"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +88,7 @@
                     android:id="@+id/button_start"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="55dp"
                     android:background="@drawable/round_button"
                     android:text="Start"
                     android:textColor="@color/black"
@@ -102,7 +102,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/round_button"
                     android:text="TOP 5"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="50dp"
                     android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

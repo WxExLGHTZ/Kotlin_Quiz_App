@@ -21,6 +21,7 @@ class TitleFragment : Fragment() {
     private lateinit var binding: FragmentTitleBinding
     private lateinit var viewModel: TitleViewModel
 
+
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
 
@@ -69,15 +70,42 @@ class TitleFragment : Fragment() {
     private fun gameStart() {
 
 
+
+
+        var hasVisibleChars = false
+
+
         /**
          * EditText input of fragment_title.xml
+         */
+
+
+        /**
+         * check that input is not empty and has visible chars
          */
 
         if(e_text_name.text.toString().isEmpty())
         {
             Toast.makeText(activity, "Bitte Namen eingeben !", Toast.LENGTH_SHORT).show()
         }
+        else if(!e_text_name.text.toString().isEmpty() && e_text_name.text.toString()[0] == " ".single())
+        {
+            Toast.makeText(activity, "Erstes Zeichen darf nicth leer sein !", Toast.LENGTH_SHORT).show()
+        }
         else
+        {
+            for (e in e_text_name.text.toString() )
+            {
+                    if( e != " ".single() )
+                    {
+                        hasVisibleChars = true
+                    }
+            }
+        }
+
+
+
+        if(hasVisibleChars)
         {
 
             /**

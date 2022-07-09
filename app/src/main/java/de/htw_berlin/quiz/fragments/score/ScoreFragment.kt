@@ -29,6 +29,9 @@ class ScoreFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
+
+
     ): View? {
 
 
@@ -37,6 +40,9 @@ class ScoreFragment : Fragment() {
          **/
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_score,container,false)
+
+
+
 
 
         /**
@@ -85,6 +91,23 @@ class ScoreFragment : Fragment() {
 
             }
         })
+
+
+        /**
+         * serttings needed for marquee
+         */
+        binding.tvPlatz1Name.setSingleLine()
+        binding.tvPlatz1Name.isSelected = true
+
+        binding.tvPlatz2Name.setSingleLine()
+        binding.tvPlatz2Name.isSelected = true
+
+        binding.tvPlatz3Name.setSingleLine()
+        binding.tvPlatz3Name.isSelected = true
+
+        binding.tvPlatz4Name.setSingleLine()
+        binding.tvPlatz4Name.isSelected = true
+
 
 
         return binding.root

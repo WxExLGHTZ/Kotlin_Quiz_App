@@ -37,7 +37,7 @@
             android:id="@+id/platz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="RANG"
             android:textColor="@color/black"
@@ -101,7 +101,7 @@
                 android:text="1"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center">
 
             </TextView>
@@ -122,6 +122,7 @@
             app:layout_constraintRight_toLeftOf="@id/cv_punkte_p1">
 
 
+
             <TextView
                 android:id="@+id/tv_platz_1_name"
                 android:layout_width="match_parent"
@@ -131,11 +132,12 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:maxLines="1"
                 app:layout_constraintTop_toTopOf="parent"
+                android:ellipsize="marquee"
                 tools:text="NAME">
+
             </TextView>
 
         </androidx.cardview.widget.CardView>
@@ -162,7 +164,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:text="10">
             </TextView>
@@ -188,7 +190,7 @@
                 android:text="2"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center">
 
             </TextView>
@@ -218,9 +220,9 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:maxLines="1"
+                android:ellipsize="marquee"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="NAME">
             </TextView>
@@ -249,7 +251,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:text="10">
             </TextView>
@@ -275,7 +277,7 @@
                 android:text="3"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center">
 
             </TextView>
@@ -305,9 +307,9 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:maxLines="1"
+                android:ellipsize="marquee"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="NAME">
             </TextView>
@@ -336,7 +338,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:text="10">
             </TextView>
@@ -362,7 +364,7 @@
                 android:text="4"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center">
 
             </TextView>
@@ -392,9 +394,10 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:maxLines="1"
+                android:ellipsize="marquee"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="NAME">
             </TextView>
@@ -423,7 +426,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:text="10">
             </TextView>
@@ -449,7 +452,7 @@
                 android:text="5"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center">
 
             </TextView>
@@ -479,9 +482,9 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:maxLines="1"
+                android:ellipsize="marquee"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="NAME">
             </TextView>
@@ -510,7 +513,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:text="10">
             </TextView>
@@ -524,7 +527,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             app:layout_constraintTop_toBottomOf="@id/cv_name_p5"
             android:background="@drawable/round_button_purple"
