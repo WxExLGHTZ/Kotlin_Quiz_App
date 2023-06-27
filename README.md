@@ -7,8 +7,6 @@ Simple quiz application for the expansion of one's own general knowledge and fun
 
 Semester: SS22
 
-Team: 3 
-
 Team member:
 
 i. Siwar Aouididi
@@ -19,7 +17,7 @@ ii. William Eppel
 
 Technologystack:
 
-Kotlin
+Kotlin / 
 RoomDatabase
 
 
